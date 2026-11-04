@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+/* dark: utilities follow the data-theme attribute set on <html> */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* short landscape phones */
+@custom-variant short (@media (max-height: 560px) and (min-width: 641px));
+
+/* ---------- Colours that change with the theme ---------- */
+:root {
+  color-scheme: light;
+  --gap: 0.6rem;
+  --page: #f6f6fc;
+  --ink: #2c2b33;
+  --ink-soft: #4a4955;
+  --ink-strong: #000000;
+  --surface: #ffffff;
+  --surface-2: #f0f0f0;
+  --surface-3: #fafafa;
+  --post-hover: #d7ece9;
+  --track: #dddadd;
+  --btn-bg: #000000;
+  --btn-text: #ffffff;
+  --placeholder: #8a8a93;
+  --focus: #353353;
+  --toggle-border: rgba(53, 51, 83, 0.18);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #12111c;
+  --ink: #e6e5f0;
+  --ink-soft: #b4b2c6;
+  --ink-strong: #ffffff;
+  --surface: #1e1c30;
+  --surface-2: #24223a;
+  --surface-3: #1a1829;
+  --post-hover: #1f3d44;
+  --track: #3a3852;
+  --btn-bg: #f1f0ff;
+  --btn-text: #14131f;
+  --placeholder: #8f8da6;
+  --focus: #58fff5;
+  --toggle-border: rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --gap: 0.9rem;
+  }
+}
+
+/* Tailwind colour names -> the variables above (so bg-surface, text-ink... flip automatically) */
+@theme inline {
+  --color-page: var(--page);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-strong: var(--ink-strong);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-post-hover: var(--post-hover);
+  --color-track: var(--track);
+  --color-btn: var(--btn-bg);
+  --color-btn-text: var(--btn-text);
+  --color-placeholder: var(--placeholder);
+  --color-focus: var(--focus);
+  --color-toggle-border: var(--toggle-border);
+}
+
+/* ---------- Fixed brand colours, fonts and animations ---------- */
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --color-navy: #353353;
+  --color-bubble: #403d56;
+  --color-glow: #58fff5;
+  --color-avatar: #19d3c5;
+  --color-accent-red: #ff3b4a;
+  --color-soft: #c9c8dc;
+
+  --animate-reveal-up: reveal-up 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+  --animate-fade-in: fade-in 1s ease 1s backwards;
+  --animate-wheel: wheel 1.6s ease-in-out infinite;
+
+  @keyframes reveal-up {
+    from {
+      opacity: 0;
+      transform: translateY(28px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes wheel {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    70% {
+      transform: translateY(8px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  body {
+    margin: 0;
+    background-color: var(--page);
+    color: #fff;
+    font-family: var(--font-sans);
+  }
+}
+
+/* short fade while switching themes (class added by the theme hook) */
+html.theme-fade,
+html.theme-fade * {
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease !important;
+}
