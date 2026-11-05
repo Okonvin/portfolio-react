@@ -73,7 +73,7 @@ export default function Contact() {
       <div className="grid grid-cols-[1fr_1.4fr] items-start gap-[clamp(1.5rem,5vw,4rem)] max-[900px]:grid-cols-1">
         <div className="relative isolate">
           <SectionTitle id="contact-title">Get In Touch</SectionTitle>
-          <Reveal as="p" className="text-[length:clamp(1.05rem,0.95rem_+_0.5vw,1.35rem)] leading-[1.45] font-light text-ink-strong">
+          <Reveal as="p" className="text-[clamp(1.05rem,0.95rem+0.5vw,1.35rem)] leading-[1.45] font-light text-ink-strong">
             Let&apos;s talk about everything!
             <br />
             Don&apos;t like forms? Send me an{" "}
@@ -85,7 +85,7 @@ export default function Contact() {
           <img
             src="/assets/world-map.svg"
             alt=""
-            className="pointer-events-none absolute top-22 left-0 -z-10 w-[min(100%,380px)] opacity-50 max-[900px]:top-[4.5rem]"
+            className="pointer-events-none absolute top-22 left-0 -z-10 w-[min(100%,380px)] opacity-50 max-[900px]:top-18"
           />
         </div>
 

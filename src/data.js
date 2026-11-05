@@ -5,7 +5,7 @@ export const navItems = [
   { id: "home", label: "Home", icon: "/assets/home.svg" },
   { id: "about", label: "About", icon: "/assets/User.svg" },
   { id: "experience", label: "Experience", icon: "/assets/Briefcase.svg" },
-  { id: "education", label: "Education", icon: "/assets/Graduation-Cap.svg" },
+  // { id: "education", label: "Education", icon: "/assets/Graduation-Cap.svg" },
   { id: "services", label: "Services", icon: "/assets/Layer-Group.svg" },
   { id: "work", label: "Recent work", icon: "/assets/Recent-work-icon.svg" },
   { id: "hire", label: "Hire me", icon: "/assets/User-Plus.svg" },
@@ -106,7 +106,7 @@ export const reviews = [
 export const brands = [
   { name: "HTML5", icon: "/assets/html.svg" },
   { name: "CSS3", icon: "/assets/css.svg" },
-  { name: "JavaScript", icon: "/assets/javascript.svg" },
+  { name: "JavaScript", icon: "/assets/javaScript.svg" },
   { name: "Bootstrap", icon: "/assets/bootstrap.svg" },
   { name: "WordPress", icon: "/assets/WordPress_blue.svg" },
   { name: "Tailwind CSS", icon: "/assets/Tailwind_CSS.svg" },
