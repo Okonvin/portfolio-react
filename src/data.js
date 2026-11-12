@@ -90,7 +90,7 @@ export const services = [
 ];
 
 export const works = [
-  { tag: "Marketing", name: "Cloudtop G", url: "https://cloudtopg11.netlify.app", image: "/images/cloud-topG.png" },
+  { tag: "Marketing", name: "Cloudtop G", url: "https://first-1-createdproject.netlify.app", image: "/images/First project.png" },
   { tag: "E-commerce", name: "Furniro", url: "https://furniture-e-commerce01.netlify.app", image: "/images/Furniture E-commerce.png" },
   { tag: "Event", name: "DevHorizon_26", url: "https://tech-conference1.netlify.app", image: "/images/tech conference.png" },
 ];
@@ -106,7 +106,7 @@ export const reviews = [
 export const brands = [
   { name: "HTML5", icon: "/assets/html.svg" },
   { name: "CSS3", icon: "/assets/css.svg" },
-  { name: "JavaScript", icon: "/assets/javaScript.svg" },
+  { name: "JavaScript", icon: "/assets/JavaScript.svg" },
   { name: "Bootstrap", icon: "/assets/bootstrap.svg" },
   { name: "WordPress", icon: "/assets/WordPress_blue.svg" },
   { name: "Tailwind CSS", icon: "/assets/Tailwind_CSS.svg" },
