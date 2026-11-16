@@ -12,5 +12,5 @@ export const contactConfig = {
   },
 
   // Used for the "send me an email" link.
-  email: "okonvictor1111@gmail.com",
+  email: "devvick97@gmail.com",
 };
