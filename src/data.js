@@ -30,7 +30,7 @@ export const socials = [
 
 export const about = {
   text: "I'm Victor, a web designer and frontend engineer. I design and build clean, responsive websites, from the first sketch in Figma to the finished page in code.",
-  cv: "/assets/cv.pdf",
+  cv: "/images/Okon_Victor_CV.docx",
 };
 
 export const skills = [

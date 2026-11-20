@@ -24,7 +24,7 @@ export default function About() {
 
           <Reveal
             delay={90}
-            className="relative grid w-full grid-cols-2 gap-[clamp(1.5rem,4vw,3rem)] rounded-[28px] bg-surface p-[clamp(1.25rem,3vw,2.5rem)] shadow-[0_18px_40px_rgba(53,51,83,0.16)] before:absolute before:top-[3.25rem] before:-left-[22px] before:h-9 before:w-6 before:bg-surface before:content-[''] before:[clip-path:polygon(100%_0,100%_100%,0_55%)] max-[760px]:grid-cols-1 max-lg:before:-top-5 max-lg:before:left-1/2 max-lg:before:h-[22px] max-lg:before:w-10 max-lg:before:-translate-x-1/2 max-lg:before:[clip-path:polygon(0_100%,100%_100%,50%_0)]"
+            className="relative grid w-full grid-cols-2 gap-[clamp(1.5rem,4vw,3rem)] rounded-[28px] bg-surface p-[clamp(1.25rem,3vw,2.5rem)] shadow-[0_18px_40px_rgba(53,51,83,0.16)] before:absolute before:top-13 before:-left-5.5 before:h-9 before:w-6 before:bg-surface before:content-[''] before:[clip-path:polygon(100%_0,100%_100%,0_55%)] max-[760px]:grid-cols-1 max-lg:before:-top-5 max-lg:before:left-1/2 max-lg:before:h-5.5 max-lg:before:w-10 max-lg:before:-translate-x-1/2 max-lg:before:[clip-path:polygon(0_100%,100%_100%,50%_0)]"
           >
             <div className="flex flex-col items-start justify-between gap-6">
               <p className="max-w-[52ch] text-[length:clamp(0.95rem,0.85rem_+_0.45vw,1.2rem)] leading-[1.65] font-light">
