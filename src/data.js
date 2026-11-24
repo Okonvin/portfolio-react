@@ -22,10 +22,11 @@ export const profile = {
 
 export const socials = [
   // { label: "Reddit", icon: "/assets/Reddit-Icon.svg", href: "#" },
-  { label: "Twitter", icon: "/assets/Twitter-Icon.svg", href: "#" },
-  { label: "Instagram", icon: "/assets/Instagram-Icon.svg", href: "#" },
-  { label: "Facebook", icon: "/assets/Facebook-Icon.svg", href: "#" },
+  // { label: "Twitter", icon: "/assets/Twitter-Icon.svg", href: "#" },
+  // { label: "Instagram", icon: "/assets/Instagram-Icon.svg", href: "#" },
+  // { label: "Facebook", icon: "/assets/Facebook-Icon.svg", href: "#" },
   // { label: "YouTube", icon: "/assets/YouTube-Icon.svg", href: "#" },
+  { label: "LinkedIn", icon: "/assets/linkedin.svg.png", href: "www.linkedin.com/in/okonvictor" },
 ];
 
 export const about = {
