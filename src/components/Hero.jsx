@@ -1,5 +1,4 @@
 import { profile, socials } from "../data.js";
-import { Link } from "./re"
 
 // Each piece fades up in turn when the page loads.
 const enterClass = "motion-safe:animate-reveal-up";
